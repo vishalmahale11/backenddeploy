@@ -9,6 +9,10 @@ app.use("/", (req, res) => {
   res.send("Backend Deploy");
 });
 
+app.use("/about", (req, res) => {
+  res.send("About Page");
+});
+
 app.listen(PORT, () => {
   console.log(`http://localhost:${PORT}`);
 });
