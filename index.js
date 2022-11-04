@@ -1,9 +1,9 @@
 const express = require("express");
-const app = express();
 require("dotenv").config();
+const app = express();
 app.use(express.json());
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8080;
 
 app.use("/", (req, res) => {
   res.send("Backend Deploy");
